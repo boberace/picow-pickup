@@ -5,25 +5,25 @@
     {
       "src": "DAELAK-16X16.png",
       "sizes": "16X16",
-      "type": "image/png",
+      "type": "img/png",
       "purpose": "any maskable"
     },
     {
       "src": "DAELAK-32X32.png",
       "sizes": "32X32",
-      "type": "image/png",
+      "type": "img/png",
       "purpose": "any maskable"
     },
     {
       "src": "DAELAK-192x192.png",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "img/png",
       "purpose": "any maskable"
     },
     {
       "src": "DAELAK-512X512.png",
       "sizes": "512X512",
-      "type": "image/png",
+      "type": "img/png",
       "purpose": "any maskable"
     }
   ],
