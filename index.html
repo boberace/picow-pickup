@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
 
 		<link rel="manifest" href="/manifest.json">
@@ -13,6 +13,7 @@
 		<meta name="apple-mobile-web-app-title" content="Hello World">
 		<meta name="msapplication-TileImage" content="images/hello-icon-144.png">
 		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
 		<script src="https://kit.fontawesome.com/bff64e1c42.js" crossorigin="anonymous"></script>
 
@@ -43,7 +44,7 @@
 					<i class="fa fa-plus"></i></a>
 			</div>			
 
-			<iframe id="mainframe" width="100%" height="100%" src="html/effect0.html" frameborder="0" ></iframe>
+			<iframe id="mainframe" title="rootFrame" width="100%" height="100%" src="html/effect0.html" frameborder="0" ></iframe>
 		</div>
 
 		<script src="js/main.js"></script>
