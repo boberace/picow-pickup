@@ -17,35 +17,37 @@
 				Adjusts the strength, length of delay, and length of decay
 			</span>
 		</div>		
-		<div class="main">
 
-			<p id="v1">_</p>
-			<input id='k1' type="range" class="input-knob" min="0" max="10" step="1" data-diameter="32" >
 
-			<p id="v2">_</p>
-			<input id='k2' type="range" class="input-knob" min="0" max="10" step="1">
-
-			<p id="v3">_</p>
-			<input id='k3' type="range" class="input-knob" min="0" max="10" step="1">
-
+		<div class="flex-container">
+			<input id='ka1' type="range" class="input-knob" min="0" max="10" step="1" data-diameter="32" >
+			<label id="va1">_</label><br>
 		</div>
+		<div class="flex-container">
+			<input id='ka2' type="range" class="input-knob" min="0" max="10" step="1">
+			<label id="va2">_</label><br>
+		</div>
+		<div class="flex-container">
+			<input id='ka3' type="range" class="input-knob" min="0" max="10" step="1">
+			<label id="va3">_</label><br>
+		</div>  
+
+
 		<script>
 
-			const knobs = new Map([
-				[document.getElementById("k1"),document.getElementById("v1")],
-				[document.getElementById("k2"),document.getElementById("v2")],
-				[document.getElementById("k3"),document.getElementById("v3")],
-			])
-
-
+			const sknobs = [
+				[document.getElementById("ka1"),document.getElementById("va1")],
+				[document.getElementById("ka2"),document.getElementById("va2")],
+				[document.getElementById("ka3"),document.getElementById("va3")]
+			]
 
 			// intitialize knob display values to what is stored on the eeprom 
-			for (let [knob,val] of knobs){
+			for (let [knob,val] of sknobs){
 				knob.value = 0
 				val.innerText = knob.value	
 			}
-
-			for (let [knob,val] of knobs){
+			// set value 
+			for (let [knob,val] of sknobs){
 				knob.oninput = function (){
 					val.innerText = this.value;
 				}

@@ -46,6 +46,20 @@ background-color: #000; /* Add a hover color */
 background-color: #04AA6D; /* Add an active/current color */
 }
 
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: max-content;
+	background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+  }
 
 
 #overlay {
