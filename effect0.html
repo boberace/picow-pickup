@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<script src="https://kit.fontawesome.com/bff64e1c42.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+
+		<title>PicoW Pickup</title>
+	</head>
+	<body>
+		<div class="popup" onclick="popFun()">Scope Tuner
+			<span class="popuptext" id="myPopup">
+				Scope Tuner: 
+				Each string has its own scope tuner.
+				Tune the string to slow the wave down from moving left or right.
+				The slower it is moving left to right the more in tune.
+				The shape of the wave does not matter.
+				Compare it to an instrument tuner to get an idea of how much to slow down.
+				It will never stop moving back and forth as the string pitch fluctuates minute amounts.
+				This can give an indication of how precise (not necessarily accurate) your instrument tuner is.
+				Try to see how far you can tune your instrument while keeping inside the "tuned" area of the instrument tuner.
+				Notice how fast and slow the Scope Tuner moves.  It is extremely precise (not necessarily accurate)
+				
+			</span>
+		</div>
+		<script>
+	
+			function popFun() {
+				  var popup = document.getElementById("myPopup");
+				  popup.classList.toggle("show");
+			}
+	
+		</script>
+
+	</body>
+</html>

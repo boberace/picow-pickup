@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://kit.fontawesome.com/bff64e1c42.js" crossorigin="anonymous"></script>
+		<script src="https://g200kg.github.io/input-knobs/input-knobs.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		
+		<title>PicoW Pickup</title>
+	</head>
+	<style>
+		.grid-suscontainer {
+		  display: grid;
+		  grid-template-columns: auto auto auto auto auto auto;
+		  background-color: var(--grid-background-color);
+		  /* padding: 1px; */
+		}
+		.grid-susitem {
+		  background-color: rgba(255, 255, 255, 0.8);
+		  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+		  /* padding: 1px; */
+		  font-size: 15px;
+		  text-align: center;
+		}
+		</style>
+	<body>
+		<div class="popup" onclick="popFun()">Lorem ipsum
+			<span class="popuptext" id="myPopup">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				
+			</span>
+		</div>
+
+		<div class="grid-suscontainer">
+			<div id="ga1" class="grid-susitem">
+				<p id="va1">_</p>
+				<input id='ka1' type="range" class="input-knob" >
+			</div>
+			<div id="ga2" class="grid-susitem">
+				<p id="va2">_</p>
+				<input id='ka2' type="range" class="input-knob" >
+			</div>
+			<div id="ga3" class="grid-susitem">
+				<p id="va3">_</p>
+				<input id='ka3' type="range" class="input-knob" >
+			</div>  
+			<div id="ga4" class="grid-susitem">
+				<p id="va4">_</p>
+				<input id='ka4' type="range" class="input-knob" >
+			</div>
+			<div id="ga5" class="grid-susitem">
+				<p id="va5">_</p>
+				<input id='ka5' type="range" class="input-knob" >
+			</div>
+			<div id="ga6" class="grid-susitem">
+				<p id="va6">_</p>
+				<input id='ka6' type="range" class="input-knob" >
+			</div>  
+			<div id="gb1" class="grid-susitem">
+				<p id="vb1">_</p>
+				<input id='kb1' type="range" class="input-knob" >
+			</div>
+			<div id="gb2" class="grid-susitem">
+				<p id="vb2">_</p>
+				<input id='kb2' type="range" class="input-knob" >
+			</div>
+			<div id="gb3" class="grid-susitem">
+				<p id="vb3">_</p>
+				<input id='kb3' type="range" class="input-knob" >
+			</div>  
+			<div id="gb4" class="grid-susitem">
+				<p id="vb4">_</p>
+				<input id='kb4' type="range" class="input-knob" >
+			</div>
+			<div id="gb5" class="grid-susitem">
+				<p id="vb5">_</p>
+				<input id='kb5' type="range" class="input-knob" >
+			</div>
+			<div id="gb6" class="grid-susitem">
+				<p id="vb6">_</p>
+				<input id='kb6' type="range" class="input-knob" >
+			</div>  
+			<div id="gc1" class="grid-susitem">
+				<p id="vc1">_</p>
+				<input id='kc1' type="range" class="input-knob" >
+			</div>
+			<div id="gc2" class="grid-susitem">
+				<p id="vc2">_</p>
+				<input id='kc2' type="range" class="input-knob" >
+			</div>
+			<div id="gc3" class="grid-susitem">
+				<p id="vc3">_</p>
+				<input id='kc3' type="range" class="input-knob" >
+			</div> 
+			<div id="gc4" class="grid-susitem">
+				<p id="vc4">_</p>
+				<input id='kc4' type="range" class="input-knob" >
+			</div>
+			<div id="gc5" class="grid-susitem">
+				<p id="vc5">_</p>
+				<input id='kc5' type="range" class="input-knob" >
+			</div>
+			<div id="gc6" class="grid-susitem">
+				<p id="vc6">_</p>
+				<input id='kc6' type="range" class="input-knob" >
+			</div>  
+		  </div>
+		  
+		<script>
+		window.inputKnobsOptions={fgcolor:"#00ff00",bgcolor:"#000080",knobDiameter:"32", min:"0", max:"50", step:"1"}
+			function popFun() {
+				  var popup = document.getElementById("myPopup");
+				  popup.classList.toggle("show");
+			}
+
+			const sknobs = new Map([
+				[document.getElementById("ka1"),document.getElementById("va1")],
+				[document.getElementById("ka2"),document.getElementById("va2")],
+				[document.getElementById("ka3"),document.getElementById("va3")],
+				[document.getElementById("ka4"),document.getElementById("va4")],
+				[document.getElementById("ka5"),document.getElementById("va5")],
+				[document.getElementById("ka6"),document.getElementById("va6")],
+				[document.getElementById("kb1"),document.getElementById("vb1")],
+				[document.getElementById("kb2"),document.getElementById("vb2")],
+				[document.getElementById("kb3"),document.getElementById("vb3")],
+				[document.getElementById("kb4"),document.getElementById("vb4")],
+				[document.getElementById("kb5"),document.getElementById("vb5")],
+				[document.getElementById("kb6"),document.getElementById("vb6")],
+				[document.getElementById("kc1"),document.getElementById("vc1")],
+				[document.getElementById("kc2"),document.getElementById("vc2")],
+				[document.getElementById("kc3"),document.getElementById("vc3")],
+				[document.getElementById("kc4"),document.getElementById("vc4")],
+				[document.getElementById("kc5"),document.getElementById("vc5")],
+				[document.getElementById("kc6"),document.getElementById("vc6")],
+			])
+	
+			// intitialize knob display values to what is stored on the eeprom 
+			for (let [knob,val] of sknobs){
+				knob.value = 0
+				val.innerText = knob.value	
+			}
+			// set value 
+			for (let [knob,val] of sknobs){
+				knob.oninput = function (){
+					val.innerText = this.value;
+				}
+			}
+
+		</script>
+	</body>
+</html>
+</html>

@@ -1,0 +1,7 @@
+suspend button for sustainer
+
+create a button with options to save and load all parameters to device and or cloud
+
+save view to micro so when after closed and reopened it goes back
+
+

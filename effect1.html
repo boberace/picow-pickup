@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<script src="https://kit.fontawesome.com/bff64e1c42.js" crossorigin="anonymous"></script>
+		<script src="https://g200kg.github.io/input-knobs/input-knobs.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+
+		<title>PicoW Pickup</title>
+	</head>
+	<body>
+		<div class="popup" onclick="popFun()">Sustain
+			<span class="popuptext" id="myPopup">
+				Adjusts the strength, length of delay, and length of decay
+			</span>
+		</div>		
+		<div class="main">
+
+			<p id="v1">_</p>
+			<input id='k1' type="range" class="input-knob" min="0" max="10" step="1" data-diameter="32" >
+
+			<p id="v2">_</p>
+			<input id='k2' type="range" class="input-knob" min="0" max="10" step="1">
+
+			<p id="v3">_</p>
+			<input id='k3' type="range" class="input-knob" min="0" max="10" step="1">
+
+		</div>
+		<script>
+
+			const knobs = new Map([
+				[document.getElementById("k1"),document.getElementById("v1")],
+				[document.getElementById("k2"),document.getElementById("v2")],
+				[document.getElementById("k3"),document.getElementById("v3")],
+			])
+
+
+
+			// intitialize knob display values to what is stored on the eeprom 
+			for (let [knob,val] of knobs){
+				knob.value = 0
+				val.innerText = knob.value	
+			}
+
+			for (let [knob,val] of knobs){
+				knob.oninput = function (){
+					val.innerText = this.value;
+				}
+			}
+
+			function popFun() {
+				  var popup = document.getElementById("myPopup");
+				  popup.classList.toggle("show");
+			}
+
+		</script>
+	</body>
+</html>
