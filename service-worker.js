@@ -1,15 +1,15 @@
-var cacheName = 'pp-pwa';
+var cacheName = 'picow-pickup';
 var filesToCache = [
-    '/',
-    '/index.html',
-    '/css/common.css',
-    '/css/popup.css',
-    '/css/style.css',
-    '/html/effect0.html',
-    '/html/effect1.html',
-    '/html/effect2.html',
-    '/html/effect3.html',
-    '/js/main.js' 
+    './',
+    './index.html',
+    './css/common.css',
+    './css/popup.css',
+    './css/style.css',
+    '.html/effect0.html',
+    './html/effect1.html',
+    './html/effect2.html',
+    './html/effect3.html',
+    './js/main.js' 
 ];
 
 /* Start the service worker and cache all of the app's content */
