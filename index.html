@@ -4,7 +4,11 @@
 
 		<link rel="manifest" href="/manifest.json">
 
-		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="theme-color" content="#ffffff"/>
+
+		<meta name="viewport" content="width=device-width, user-scalable=1">
+
+		<link rel="apple-touch-icon" href="/DAELAK-192x192.png">
 
 		<script src="https://kit.fontawesome.com/bff64e1c42.js" crossorigin="anonymous"></script>
 		
@@ -26,22 +30,28 @@
 
 		<div class="grid-container-main">
 			<div id="icon-bar-left" class="icon-bar">
-				<a class="nbi active" href="#" onclick="document.getElementById('mainframe').src ='effect0.html'">
+				<a class="nbi active" href="#" onclick="document.getElementById('mainframe').src ='html/effect0.html'">
 					<i class="fa fa-earth"></i></a>
-				<a class="nbi" href="#" onclick="document.getElementById('mainframe').src ='effect1.html'">
+				<a class="nbi" href="#" onclick="document.getElementById('mainframe').src ='html/effect1.html'">
 					<i class="fa fa-wind"></i></a>
-				<a class="nbi" href="#" onclick="document.getElementById('mainframe').src ='effect2.html'">
+				<a class="nbi" href="#" onclick="document.getElementById('mainframe').src ='html/effect2.html'">
 					<i class="fa fa-fire"></i></a>
-				<a class="nbi" href="#" onclick="document.getElementById('mainframe').src ='effect3.html'">
+				<a class="nbi" href="#" onclick="document.getElementById('mainframe').src ='html/effect3.html'">
 					<i class="fa fa-water"></i></a>
 				<a class="nbi" href="#" onclick="openFullscreen()">
 					<i class="fa fa-plus"></i></a>
 			</div>			
 
-			<iframe id="mainframe" width="100%" height="100%" src="effect0.html" frameborder="0" ></iframe>
+			<iframe id="mainframe" width="100%" height="100%" src="html/effect0.html" frameborder="0" ></iframe>
 		</div>
 
 	<script>
+
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker.register('/js/service-worker.js');
+			});
+		}
 
 		var nbContainer = document.getElementById("icon-bar-left");
 		var nbis = nbContainer.getElementsByClassName("nbi");
