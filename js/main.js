@@ -3,15 +3,10 @@ window.onload = () => {
   
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-               .register('./sw.js');
+               .register('./service-worker.js');
     }
   }
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('./service-worker.js');
-    });
-}
 
 var nbContainer = document.getElementById("icon-bar-left");
 var nbis = nbContainer.getElementsByClassName("nbi");
