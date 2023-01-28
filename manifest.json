@@ -3,6 +3,7 @@
   "name": "Interface for PicoW Pickup",
   "start_url": "/index.html",
   "display": "standalone",
+  "lang": "en-US",
   "prefer_related_applications": false,
   "related_applications": [
       {
