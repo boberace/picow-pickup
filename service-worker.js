@@ -1,13 +1,7 @@
 var cacheName = 'pp-pwa';
 var filesToCache = [
     '/',
-    '/css',
-    '/html',
-    '/img',
     '/index.html',
-    '/js',
-    '/manifest.json',
-    '/service-worker.js',
     '/css/common.css',
     '/css/popup.css',
     '/css/style.css',
@@ -15,10 +9,6 @@ var filesToCache = [
     '/html/effect1.html',
     '/html/effect2.html',
     '/html/effect3.html',
-    '/img/DAELAK-16x16.png',
-    '/img/DAELAK-192x192.png',
-    '/img/DAELAK-32x32.png',
-    '/img/DAELAK-512x512.png',
     '/js/main.js' 
 ];
 
