@@ -22,7 +22,7 @@ self.addEventListener('install', function(event) {
                 '/img/DAELAK-32x32.png',
                 '/img/DAELAK-512x512.png',
                 '/img/favicon-32x32.png',
-                '/js/service-worker.js'
+                '/service-worker.js'
             ]);
         })
     );
